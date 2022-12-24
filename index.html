@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTakToy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3>Active player: Player 1</h3>
+    <div class="game">
+        <table>
+            <tr>
+                <td><button class="cellule1" onclick="play('cellule1')"></button></td>
+                <td><button class="cellule2" onclick="play('cellule2')"></button></td>
+                <td><button class="cellule3" onclick="play('cellule3')"></button></td>
+            </tr>
+            <tr>
+                <td><button class="cellule4" onclick="play('cellule4')"></button></td>
+                <td><button class="cellule5" onclick="play('cellule5')"></button></td>
+                <td><button class="cellule6" onclick="play('cellule6')"></button></td>
+            </tr>
+            <tr>
+                <td><button class="cellule7" onclick="play('cellule7')"></button></td>
+                <td><button class="cellule8" onclick="play('cellule8')"></button></td>
+                <td><button class="cellule9" onclick="play('cellule9')"></button></td>
+            </tr>
+        </table>
+    </div>
+    <div id="MsgBox">
+        <p id="winTxt"></p>
+        <div class="menu" hidden>
+            <input type="button" value="Restart" onclick="restart()">
+            
+        </div>
+    </div>
+    <span class="terminal"></span>
+    <script src="script.js"></script>
+</body>
+
+</html>
